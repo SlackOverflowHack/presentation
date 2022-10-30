@@ -59,7 +59,7 @@ export default function Home() {
         <div className='relative w-1/3 flex items-start justify-center'>
           <Image
             alt='phone_screenshot_1'
-            src='/1. Mockup.png'
+            src='/mock1.png'
             height='400'
             width='200'
             className='mx-auto absolute top-0 right-0'
@@ -82,7 +82,7 @@ export default function Home() {
         </span>
         <div className='relative pt-5 flex flex-col items-center justify-start'>
           <Image
-            src='/2. Mockup.png'
+            src='/mock2.png'
             width='200'
             height='400'
             alt='phone_screenshot_2'
@@ -90,7 +90,7 @@ export default function Home() {
         </div>
         <div className='relative pt-5 flex flex-col items-center justify-start'>
           <Image
-            src='/3. Mockup.png'
+            src='/mock3.png'
             width='200'
             height='400'
             alt='phone_screenshot_3'
