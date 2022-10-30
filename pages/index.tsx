@@ -29,8 +29,8 @@ export default function Home() {
           <span className='text-white text-xl'>Your date with health</span>
         </div>
       </section>
-      <section className='flex flex-col lg:flex-row justify-center lg:justify-evenly items-center gap-5 py-5 bg-[#EFEFEF]'>
-        <div className='px-24 max-w-[60%] gap-5 flex flex-col '>
+      <section className='px-12 flex flex-col lg:grid grid-cols-2 gap-5 py-5 bg-[#EFEFEF] lg:px-[115px]'>
+        <div className=' gap-5 flex flex-col lg:w-3/2 xl:text-xl'>
           <p>
             Deutschland bewegt sich zu wenig. Die meisten Tätigkeiten finden
             sitzend oder liegend statt, auf dieses Problem weisen Studien schon
@@ -56,7 +56,7 @@ export default function Home() {
             mehr Bewegung ambitionieren
           </p>
         </div>
-        <div className='relative flex flex-col items-center justify-start gap-5 lg:pr-24'>
+        <div className='relative flex flex-col items-center justify-start gap-5 '>
           <Image
             alt='phone_screenshot_1'
             src='/mock1.png'
@@ -64,7 +64,7 @@ export default function Home() {
             width='200'
             className='mx-auto'
           />
-          <span className='text-green-700 text-md xl:text-lg font-bold px-64'>
+          <span className='text-green-700 text-md xl:text-lg font-bold px-12 '>
             Bei der Anmeldung gibt der User Tags an, welche auf den Karten
             dargestellt werden, um Transparenz beim Kursangebot zu schaffen.
           </span>
@@ -97,7 +97,7 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className='grid lg:hidden grid-cols-1 bg-amber-200/10 px-[115px] py-5 gap-5 '>
+      <section className='grid lg:hidden grid-cols-1 bg-amber-200/10 px-12 py-5 gap-5 '>
         <span className=''>
           Nach der Registrierung mit Namen, Geburtstag und anderen Daten erhält
           der User über einen Login Zugriff auf die App.
@@ -125,7 +125,9 @@ export default function Home() {
         </div>
       </section>
       <section className='bg-[#D9D9D9] hidden lg:flex flex-col p-5 gap-5  '>
-        <h1 className='font-bold text-5xl px-12'>Monetarisierung</h1>
+        <h1 className='font-bold text-2xl lg:text-5xl px-12'>
+          Monetarisierung
+        </h1>
         <div className='grid grid-cols-2'>
           <div className='flex flex-col items-center justify-start px-20'>
             <div className='relative'>
@@ -156,7 +158,7 @@ export default function Home() {
       <section className='bg-[#D9D9D9] lg:hidden flex flex-col p-5 gap-5  '>
         <h1 className='font-bold text-5xl text-center'>Monetarisierung</h1>
         <div className='grid grid-cols-1 gap-5'>
-          <div className='flex flex-col items-center justify-start px-20'>
+          <div className='flex flex-col items-center justify-start px-8'>
             <div className='relative'>
               <Image alt='ad icon' src='/werbung.png' height='64' width='80' />
             </div>
@@ -168,7 +170,7 @@ export default function Home() {
               Unternehmen Werbung schalten können.
             </span>
           </div>
-          <div className='flex flex-col items-center justify-start px-20'>
+          <div className='flex flex-col items-center justify-start px-8'>
             <div className='relative'>
               <Image alt='ad icon' src='/premium.png' height='64' width='80' />
             </div>
@@ -212,7 +214,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className='flex flex-col items-start justify-start gap-5 bg-gray-600/30 px-20 py-5'>
+      <section className='flex flex-col items-start justify-start gap-5 bg-gray-600/30 px-8 lg:px-20 py-5'>
         <p>
           Die App liest Daten DSGVO-konform aus der Firebase
           FireStore-Datenbank. Alle Änderungsanfragen von der App werden zum
