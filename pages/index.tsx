@@ -29,8 +29,8 @@ export default function Home() {
           <span className='text-white text-xl'>Your date with health</span>
         </div>
       </section>
-      <section className='flex flex-row justify-evenly py-5 bg-[#EFEFEF]'>
-        <div className='px-24 max-w-[60%] gap-5 flex flex-col'>
+      <section className='flex flex-col lg:flex-row justify-center lg:justify-evenly items-center gap-5 py-5 bg-[#EFEFEF]'>
+        <div className='px-24 max-w-[60%] gap-5 flex flex-col '>
           <p>
             Deutschland bewegt sich zu wenig. Die meisten Tätigkeiten finden
             sitzend oder liegend statt, auf dieses Problem weisen Studien schon
@@ -56,22 +56,22 @@ export default function Home() {
             mehr Bewegung ambitionieren
           </p>
         </div>
-        <div className='relative w-1/3 flex items-start justify-center'>
+        <div className='relative flex flex-col items-center justify-start gap-5 lg:pr-24'>
           <Image
             alt='phone_screenshot_1'
             src='/mock1.png'
             height='400'
             width='200'
-            className='mx-auto absolute top-0 right-0'
+            className='mx-auto'
           />
-          <span className='text-green-700 absolute bottom-16 -left-20 w-32 text-sm font-bold'>
+          <span className='text-green-700 text-md xl:text-lg font-bold px-64'>
             Bei der Anmeldung gibt der User Tags an, welche auf den Karten
             dargestellt werden, um Transparenz beim Kursangebot zu schaffen.
           </span>
         </div>
       </section>
-      <section className='grid grid-cols-2 bg-amber-200/10 px-[115px] py-5 gap-5'>
-        <span>
+      <section className='hidden lg:grid grid-cols-2 bg-amber-200/10 px-[115px] py-5 gap-5 '>
+        <span className=''>
           Nach der Registrierung mit Namen, Geburtstag und anderen Daten erhält
           der User über einen Login Zugriff auf die App.
         </span>
@@ -97,7 +97,34 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className='bg-[#D9D9D9] flex flex-col p-5 gap-5'>
+      <section className='grid lg:hidden grid-cols-1 bg-amber-200/10 px-[115px] py-5 gap-5 '>
+        <span className=''>
+          Nach der Registrierung mit Namen, Geburtstag und anderen Daten erhält
+          der User über einen Login Zugriff auf die App.
+        </span>
+        <div className='relative pt-5 flex flex-col items-center justify-start'>
+          <Image
+            src='/mock2.png'
+            width='200'
+            height='400'
+            alt='phone_screenshot_2'
+          />
+        </div>
+        <span>
+          Der Nutzer kann mit der Kalenderfunktion immer im Blick behalten, wann
+          welche seiner favorisierten Kurse stattfinden und ob er angenommen
+          wurde.
+        </span>
+        <div className='relative pt-5 flex flex-col items-center justify-start'>
+          <Image
+            src='/mock3.png'
+            width='200'
+            height='400'
+            alt='phone_screenshot_3'
+          />
+        </div>
+      </section>
+      <section className='bg-[#D9D9D9] hidden lg:flex flex-col p-5 gap-5  '>
         <h1 className='font-bold text-5xl px-12'>Monetarisierung</h1>
         <div className='grid grid-cols-2'>
           <div className='flex flex-col items-center justify-start px-20'>
@@ -126,11 +153,42 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section className='bg-[#D9D9D9] lg:hidden flex flex-col p-5 gap-5  '>
+        <h1 className='font-bold text-5xl text-center'>Monetarisierung</h1>
+        <div className='grid grid-cols-1 gap-5'>
+          <div className='flex flex-col items-center justify-start px-20'>
+            <div className='relative'>
+              <Image alt='ad icon' src='/werbung.png' height='64' width='80' />
+            </div>
+            <span>
+              Durch das gezielte Schalten von Werbung zwischen den einzelnen
+              Swipes als eigene Karten sollen Umsätze erzielt werden. Ein
+              besonderes Augenmerk liegt hierbei jedoch auf den Werbetreibenden
+              selbst. Es sollen ausschließlich Fitness-/Gesundheitsinteressierte
+              Unternehmen Werbung schalten können.
+            </span>
+          </div>
+          <div className='flex flex-col items-center justify-start px-20'>
+            <div className='relative'>
+              <Image alt='ad icon' src='/premium.png' height='64' width='80' />
+            </div>
+            <span>
+              Das Anbieten einer Premium-Lösung für Kursanbieter soll eine
+              weitere Umsatzquelle darstellen. Premium-Kunden sollen mehr Kurse
+              als andere Anbieter auf der Plattform veröffentlichen können.
+              Außerdem sollen sie die Möglichkeit erhalten, bestimmte Kurse
+              öfter bei Kunden anzeigen zu lassen.
+            </span>
+          </div>
+        </div>
+      </section>
       <section className='bg-[#EFEFEF] flex flex-col p-5 gap-5'>
-        <h1 className='font-bold text-5xl pl-12'>Technologien</h1>
-        <div className='grid grid-cols-3 px-20'>
+        <h1 className='font-bold text-5xl lg:pl-12 text-center lg:text-left'>
+          Technologien
+        </h1>
+        <div className='grid grid-cols-1 lg:grid-cols-3 px-20 gap-8 lg:gap-1'>
           <div className='flex flex-col gap-5 items-center justify-start'>
-            <h3 className='text-2xl text-[#219A31]'>Frontend</h3>
+            <h3 className='text-2xl xl:text-4xl text-[#219A31]'>Frontend</h3>
             <div className='flex flex-col items-center justify-start'>
               <span>React Native</span>
               <span>Expo</span>
@@ -138,19 +196,18 @@ export default function Home() {
             </div>
           </div>
           <div className='flex flex-col gap-5 items-center justify-start'>
-            <h3 className='text-2xl text-[#219A31]'>Frontend</h3>
+            <h3 className='text-2xl text-[#219A31]'>Backend</h3>
             <div className='flex flex-col items-center justify-start'>
-              <span>React Native</span>
-              <span>Expo</span>
-              <span>NextJS</span>
+              <span>Laravel PHP</span>
+              <span>Firebase</span>
             </div>
           </div>
           <div className='flex flex-col gap-5 items-center justify-start'>
-            <h3 className='text-2xl text-[#219A31]'>Frontend</h3>
+            <h3 className='text-2xl text-[#219A31]'>Deployment</h3>
             <div className='flex flex-col items-center justify-start'>
-              <span>React Native</span>
-              <span>Expo</span>
-              <span>NextJS</span>
+              <span>Docker</span>
+              <span>Kubernetes</span>
+              <span>Vercel</span>
             </div>
           </div>
         </div>
