@@ -71,11 +71,11 @@ export default function Home() {
         </div>
       </section>
       <section className='hidden lg:grid grid-cols-2 bg-amber-200/10 px-[115px] py-5 gap-5 '>
-        <span className=''>
+        <span className='xl:text-xl'>
           Nach der Registrierung mit Namen, Geburtstag und anderen Daten erhält
           der User über einen Login Zugriff auf die App.
         </span>
-        <span>
+        <span className='xl:text-xl'>
           Der Nutzer kann mit der Kalenderfunktion immer im Blick behalten, wann
           welche seiner favorisierten Kurse stattfinden und ob er angenommen
           wurde.
