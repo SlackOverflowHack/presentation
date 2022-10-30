@@ -98,7 +98,7 @@ export default function Home() {
         </div>
       </section>
       <section className='grid lg:hidden grid-cols-1 bg-amber-200/10 px-12 py-5 gap-5 '>
-        <span className=''>
+        <span className='xl:text-xl'>
           Nach der Registrierung mit Namen, Geburtstag und anderen Daten erhält
           der User über einen Login Zugriff auf die App.
         </span>
@@ -110,7 +110,7 @@ export default function Home() {
             alt='phone_screenshot_2'
           />
         </div>
-        <span>
+        <span className='xl:text-xl'>
           Der Nutzer kann mit der Kalenderfunktion immer im Blick behalten, wann
           welche seiner favorisierten Kurse stattfinden und ob er angenommen
           wurde.
@@ -133,7 +133,7 @@ export default function Home() {
             <div className='relative'>
               <Image alt='ad icon' src='/werbung.png' height='64' width='80' />
             </div>
-            <span>
+            <span className='xl:text-xl'>
               Durch das gezielte Schalten von Werbung zwischen den einzelnen
               Swipes als eigene Karten sollen Umsätze erzielt werden. Ein
               besonderes Augenmerk liegt hierbei jedoch auf den Werbetreibenden
@@ -145,7 +145,7 @@ export default function Home() {
             <div className='relative'>
               <Image alt='ad icon' src='/premium.png' height='64' width='80' />
             </div>
-            <span>
+            <span className='xl:text-xl'>
               Das Anbieten einer Premium-Lösung für Kursanbieter soll eine
               weitere Umsatzquelle darstellen. Premium-Kunden sollen mehr Kurse
               als andere Anbieter auf der Plattform veröffentlichen können.
@@ -162,7 +162,7 @@ export default function Home() {
             <div className='relative'>
               <Image alt='ad icon' src='/werbung.png' height='64' width='80' />
             </div>
-            <span>
+            <span className='xl:text-xl'>
               Durch das gezielte Schalten von Werbung zwischen den einzelnen
               Swipes als eigene Karten sollen Umsätze erzielt werden. Ein
               besonderes Augenmerk liegt hierbei jedoch auf den Werbetreibenden
@@ -174,7 +174,7 @@ export default function Home() {
             <div className='relative'>
               <Image alt='ad icon' src='/premium.png' height='64' width='80' />
             </div>
-            <span>
+            <span className='xl:text-xl'>
               Das Anbieten einer Premium-Lösung für Kursanbieter soll eine
               weitere Umsatzquelle darstellen. Premium-Kunden sollen mehr Kurse
               als andere Anbieter auf der Plattform veröffentlichen können.
@@ -214,20 +214,20 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className='flex flex-col items-start justify-start gap-5 bg-gray-600/30 px-8 lg:px-20 py-5'>
-        <p>
+      <section className='pb-8 flex flex-col items-start justify-start gap-5 bg-gray-600/30 px-8 lg:px-20 py-5'>
+        <p className='xl:text-xl'>
           Die App liest Daten DSGVO-konform aus der Firebase
           FireStore-Datenbank. Alle Änderungsanfragen von der App werden zum
           Laravel-Backend gesendet. Dort werden Anfragedaten sowie
           Nutzerberechtigungen geprüft. Ist die Anfrage korrekt werden die Daten
           in der FireStore-Datenbank aktualisiert.
         </p>
-        <p>
+        <p className='xl:text-xl'>
           Durch die Nutzung von React Native zusammen mit der Expo.JS Library
           können wir die App mit nur einer Codebase auf den drei gängigsten
           Plattformen veröffentlichen: Android, iOS und als Website.
         </p>
-        <p>
+        <p className='xl:text-xl'>
           Die App ist für Angebots-Nutzer gedacht. Zusätzlich zur App gibt es
           die Kursverwaltung. Diese ist mit Next.JS realisiert. Mit ihr können
           Kursleiter, welche nicht bei VHS oder ähnlichen Betreibern agieren,
